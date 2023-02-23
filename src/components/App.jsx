@@ -17,7 +17,14 @@ export class App extends Component {
   render() {
     return (
       <div>
-        
+        <SearchBar onSubmit={this.handleFormSubmit} />
+        {this.state.isLoading && <Spinner />}
+        {this.state.images.length > 0 && (
+          <>
+            <ImageGallery images={this.state.images} />
+            <Button onClick={this.handleLoadMore} />
+          </>
+        )}
       </div>
     );
   }
