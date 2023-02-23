@@ -1,8 +1,6 @@
 import { InfinitySpin } from 'react-loader-spinner';
 import { Component } from 'react';
 import style from './Loader.module.css';
-
-
 export class Spinner extends Component {
   render() {
     return (
@@ -12,7 +10,6 @@ export class Spinner extends Component {
     );
   }
 }
-
 
 // class App extends Component {
 //   state = {
